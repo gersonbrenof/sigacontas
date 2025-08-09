@@ -1,0 +1,33 @@
+# General
+
+# ------------------------------------------------------------------------------
+USE_DOCKER=yes
+IPYTHONDIR=/app/.ipython
+# Redis
+# ------------------------------------------------------------------------------
+REDIS_URL=redis://redis:6379/0
+
+# Celery
+# ------------------------------------------------------------------------------
+
+# Flower
+
+USE_DOCKER=yes
+IPYTHONDIR=/app/.ipython
+
+# Redis
+REDIS_URL=redis://redis:6379/0
+
+# Celery
+CELERY_FLOWER_USER=debug
+CELERY_FLOWER_PASSWORD=debug
+
+
+DJANGO_EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+DJANGO_EMAIL_HOST=smtp.gmail.com
+DJANGO_EMAIL_PORT=587
+DJANGO_EMAIL_USE_TLS=True
+DJANGO_EMAIL_USE_SSL=False
+DJANGO_EMAIL_HOST_USER=@seudominio.com
+DJANGO_EMAIL_HOST_PASSWORD=suasenha
+DJANGO_DEFAULT_FROM_EMAIL=@seudominio.com
